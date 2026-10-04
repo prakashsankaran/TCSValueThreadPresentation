@@ -1,0 +1,764 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.slide-visual {
+    margin-top: 4rem;
+    display: flex;
+    align-items: center;
+    opacity: 0.7;
+}
+
+.visual-element {
+    transition: all 0.5s ease;
+}
+
+.visual-circle {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: var(--accent-primary);
+    box-shadow: 0 0 15px var(--accent-primary);
+}
+
+.visual-line {
+    height: 2px;
+    width: 200px;
+    background: linear-gradient(90deg, var(--accent-primary), var(--accent-tertiary));
+    margin: 0 10px;
+}
+
+.end-circle {
+    background-color: var(--accent-tertiary);
+    box-shadow: 0 0 15px var(--accent-tertiary);
+}
+
+/* Slide 2: Quote Styles */
+.quote-slide {
+    text-align: center;
+    align-items: center;
+}
+
+.quote-icon {
+    font-family: var(--font-heading);
+    font-size: 8rem;
+    line-height: 1;
+    color: var(--accent-primary);
+    opacity: 0.3;
+    margin-bottom: -1.5rem;
+}
+
+.quote-text {
+    font-family: var(--font-heading);
+    font-size: 3.5rem;
+    font-weight: 600;
+    line-height: 1.3;
+    margin-bottom: 3rem;
+    max-width: 900px;
+}
+
+.quote-author {
+    font-size: 1.25rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    color: var(--text-tertiary);
+    text-transform: uppercase;
+}
+
+/* Slide 3: Carousel Styles */
+.carousel-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-top: 3rem;
+    width: 100%;
+}
+
+.cards-carousel {
+    display: flex;
+    gap: 2rem;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+    padding: 1rem 0;
+    width: 100%;
+    /* Hide scrollbar */
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+.cards-carousel::-webkit-scrollbar {
+    display: none;
+}
+
+.carousel-card {
+    min-width: 350px;
+    max-width: 400px;
+    flex: 0 0 auto;
+    scroll-snap-align: center;
+    padding: 0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    background: rgba(15, 23, 42, 0.7);
+    border: 1px solid var(--glass-border);
+    border-radius: 16px;
+    transition: transform 0.3s ease, background 0.3s ease;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    gap: 1.5rem;
+    padding: 1.5rem;
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid var(--glass-border);
+    margin-bottom: 1rem;
+    border-radius: 12px;
+    transition: transform 0.3s ease;
+}
+.value-list li:hover {
+    transform: translateX(10px);
+    background: rgba(255, 255, 255, 0.05);
+}
+.check-icon {
+    background: var(--accent-secondary);
+    color: white;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    flex-shrink: 0;
+}
+.list-text {
+    font-size: 1.3rem;
+    line-height: 1.5;
+}
+
+/* Slide 11: Metrics */
+.metrics-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+.metric-card {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid var(--glass-border);
+    padding: 3rem;
+    border-radius: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s;
+}
+.metric-card:hover {
+    transform: scale(1.05);
+}
+.metric-value {
+    font-size: 4rem;
+    font-weight: 800;
+    font-family: var(--font-heading);
+    margin-bottom: 1rem;
+}
+.metric-name {
+    font-size: 1.5rem;
+    color: var(--text-secondary);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+/* Slide 12: CTA */
+.cta-button {
+    background: linear-gradient(135deg, var(--accent-primary), var(--accent-secondary));
+    border: none;
+    padding: 1.5rem 3rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: white;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0 10px 25px rgba(59, 130, 246, 0.5);
+    transition: all 0.3s ease;
+    font-family: var(--font-heading);
+}
+.cta-button:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(59, 130, 246, 0.7);
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+    .slide-title { font-size: 3.5rem; }
+    .slide-subtitle { font-size: 2rem; }
+    .slide-container { padding: 4rem; }
+    .quote-text { font-size: 2.8rem; }
+    .cards-grid { grid-template-columns: 1fr; gap: 1.5rem; }
+    .glass-card { padding: 1.5rem; }
+    .two-col-layout { flex-direction: column; }
+    .comparison-grid { grid-template-columns: 1fr; }
+    .comp-header { display: none; }
+    .comp-row-title { border-right: none; border-bottom: 1px solid var(--glass-border); }
+    .retention-chart { height: 200px; }
+}
+
+@media (max-width: 768px) {
+    .slide-title { font-size: 2.5rem; }
+    .slide-subtitle { font-size: 1.5rem; }
+    .slide-description { font-size: 1.25rem; }
+    .slide-container { padding: 2.5rem; aspect-ratio: auto; min-height: 70vh; }
+    .quote-text { font-size: 2rem; }
+    .cards-grid { grid-template-columns: 1fr; }
+    .huge-stat { font-size: 6rem; }
+    .timeline-step { padding-left: 80px; }
+    .step-dot { left: 8px; width: 36px; height: 36px; font-size: 1rem; }
+    .timeline-line { left: 24px; }
+    .metrics-grid { grid-template-columns: 1fr; }
+    .metric-value { font-size: 3rem; }
+    .retention-group { width: 60px; }
+    .ret-bars { gap: 5px; }
+    .ret-bar { width: 20px; }
+}
